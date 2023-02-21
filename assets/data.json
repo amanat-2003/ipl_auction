@@ -1,0 +1,94 @@
+{
+    "players": [
+        {
+            "cricket_player_name": "Virat Kohli",
+            "base_price": 900,
+            "player_number": 1,
+            "batting_index": 9.8,
+            "bowling_index": 5.2,
+            "fielding_index": 8.5,
+            "player_image_address": "assets/1.jpeg"
+        },
+        {
+            "cricket_player_name": "Kane Williamson",
+            "base_price": 800,
+            "player_number": 2,
+            "batting_index": 9.5,
+            "bowling_index": 6.0,
+            "fielding_index": 8.7,
+            "player_image_address": "assets/2.jpg"
+        },
+        {
+            "cricket_player_name": "Steve Smith",
+            "base_price": 500,
+            "player_number": 3,
+            "batting_index": 9.6,
+            "bowling_index": 4.5,
+            "fielding_index": 7.8,
+            "player_image_address": "assets/3.webp"
+        },
+        {
+            "cricket_player_name": "Joe Root",
+            "base_price": 700,
+            "player_number": 4,
+            "batting_index": 9.7,
+            "bowling_index": 5.5,
+            "fielding_index": 8.0,
+            "player_image_address": "assets/4.webp"
+        },
+        {
+            "cricket_player_name": "Rohit Sharma",
+            "base_price": 600,
+            "player_number": 5,
+            "batting_index": 9.9,
+            "bowling_index": 4.0,
+            "fielding_index": 8.2,
+            "player_image_address": "assets/4.webp"
+        },
+        {
+            "cricket_player_name": "David Warner",
+            "base_price": 300,
+            "player_number": 6,
+            "batting_index": 9.5,
+            "bowling_index": 6.5,
+            "fielding_index": 8.4,
+            "player_image_address": "assets/4.webp"
+        },
+        {
+            "cricket_player_name": "Babar Azam",
+            "base_price": 800,
+            "player_number": 7,
+            "batting_index": 9.8,
+            "bowling_index": 4.2,
+            "fielding_index": 8.1,
+            "player_image_address": "assets/4.webp"
+        },
+        {
+            "cricket_player_name": "Shakib Al Hasan",
+            "base_price": 600,
+            "player_number": 8,
+            "batting_index": 9.3,
+            "bowling_index": 8.0,
+            "fielding_index": 8.9,
+            "player_image_address": "assets/4.webp"
+        },
+        {
+            "cricket_player_name": "Ross Taylor",
+            "base_price": 100,
+            "player_number": 9,
+            "batting_index": 9.2,
+            "bowling_index": 2.5,
+            "fielding_index": 7.5,
+            "player_image_address": "assets/4.webp"
+        },
+        {
+            "cricket_player_name": "Kagiso Rabada",
+            "base_price": 200,
+            "player_number": 10,
+            "batting_index": 7.0,
+            "bowling_index": 9.5,
+            "fielding_index": 8.8,
+            "player_image_address": "assets/4.webp"
+        }
+    ]
+}
