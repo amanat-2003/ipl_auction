@@ -5,6 +5,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:ipl_auction/data.dart';
+import 'package:ipl_auction/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,9 +20,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'IPL Auction Portal Goonj',
       theme: ThemeData(
-        primarySwatch: Colors.teal,
+        primarySwatch: Colors.deepOrange,
       ),
-      home: const MyHomePage(title: 'IPL Auction Portal Goonj'),
+      home: const MyHomePage(title: 'Auction Portal'),
     );
   }
 }
@@ -37,13 +38,15 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   var player_no = 1;
-  num current_bid = 0;
+  num current_bid = 400;
+  final darkYellow = Color.fromARGB(255, 228, 90, 4);
+  final controller = TextEditingController();
 
   setStartingBid() {
     setState(() {
-      current_bid = (Players.players != null && Players.players.isNotEmpty)
-          ? Players.players[player_no - 1].basePrice
-          : 0;
+      current_bid = (Players.players.isNotEmpty)
+          ? Players.players[player_no - 1].base_price
+          : 400;
     });
   }
 
@@ -67,13 +70,21 @@ class _MyHomePageState extends State<MyHomePage> {
 
   incrementCurrentBid() {
     setState(() {
-      current_bid = current_bid + 10;
+      if (current_bid < 100) {
+        current_bid = current_bid + 10;
+      } else if (current_bid < 500) {
+        current_bid = current_bid + 20;
+      } else if (current_bid < 1000) {
+        current_bid = current_bid + 50;
+      } else {
+        current_bid = current_bid + 100;
+      }
     });
   }
 
   decrementCurrentBid() {
     setState(() {
-        current_bid = current_bid - 10;
+      if (current_bid >= 10) current_bid = current_bid - 10;
     });
   }
 
@@ -84,7 +95,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   loadData() async {
-    await Future.delayed(Duration(seconds: 2));
+    await Future.delayed(const Duration(seconds: 2));
     var playersJson = await rootBundle.loadString("assets/data.json");
     var decodedData = jsonDecode(playersJson);
     var playersJsonList = decodedData["players"];
@@ -99,120 +110,200 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    final screenSize = MediaQuery.of(context).size;
     return Scaffold(
+        extendBodyBehindAppBar: true,
         appBar: AppBar(
-          title: Text(widget.title),
+          title: Text(widget.title, textScaleFactor: 1.5),
+          backgroundColor: Colors.transparent,
+          // elevation: 1,
         ),
-        body: Row(
-          // mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Expanded(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  CircleAvatar(
-                      radius: 210,
-                      backgroundColor: Colors.teal,
-                      child: CircleAvatar(
-                        backgroundImage: AssetImage((Players.players != null &&
-                                Players.players.isNotEmpty)
-                            ? Players.players[player_no - 1].imageAddress
-                            : 'assets/2.jpg'),
-                        // backgroundImage: AssetImage('assets/2.jpg'),
-                        // backgroundImage: NetworkImage(
-                        //   'https://i.guim.co.uk/img/media/1059b0efc3c2dd88ff36f911575f89c250d48afc/226_456_1394_836/master/1394.jpg?width=620&quality=45&dpr=2&s=none'
-                        // ),
-                        radius: 200,
-                      )),
-                  const SizedBox(
-                    height: 45,
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      ElevatedButton(
-                        onPressed: decrementPlayerNo,
-                        child: const Icon(Icons.arrow_back_sharp),
-                      ),
-                      const SizedBox(width: 40),
-                      Column(
-                        children: [
-                          Text(
-                            (Players.players != null &&
-                                    Players.players.isNotEmpty)
-                                ? Players.players[player_no - 1].name
-                                : 'Starting Now',
-                            style: TextStyle(fontSize: 35, color: Colors.green),
+        body: Container(
+          decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage('assets/pics/bg.png'), fit: BoxFit.cover)),
+          child: Row(
+            // mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        SizedBox(
+                          width: screenSize.width * 0.125,
+                          child: TextField(
+                            onChanged: (value) {
+                              try {
+                                if (value == '') {
+                                  value = '1';
+                                }
+                                setState(() {
+                                  var temp = int.parse(value);
+                                  if (temp <= 191 && temp >= 1) {
+                                    player_no = temp;
+                                  }
+                                });
+                                setStartingBid();
+                              } catch (e) {}
+                            },
+                            style: TextStyle(color: Colors.white),
+                            cursorColor: Colors.white,
+                            decoration: inpDecor.copyWith(
+                              hintText: 'Player No.',
+                              hintStyle: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
                           ),
-                          Text(
-                            'Player No. $player_no',
-                            style: const TextStyle(fontSize: 25),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(width: 40),
-                      ElevatedButton(
-                        onPressed: incrementPlayerNo,
-                        child: const Icon(Icons.arrow_forward_sharp),
-                      ),
-                    ],
-                  ),
-                ],
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 30),
+                    CircleAvatar(
+                        radius: 205,
+                        backgroundColor: Colors.deepOrange,
+                        child: CircleAvatar(
+                          backgroundImage: AssetImage(
+                              (Players.players.isNotEmpty)
+                                  ? Players.players[player_no - 1].path_of_image
+                                  : 'assets/pics/1.jpg'),
+                          // backgroundImage: AssetImage('assets/2.jpg'),
+                          // backgroundImage: NetworkImage(
+                          //   'https://i.guim.co.uk/img/media/1059b0efc3c2dd88ff36f911575f89c250d48afc/226_456_1394_836/master/1394.jpg?width=620&quality=45&dpr=2&s=none'
+                          // ),
+                          radius: 200,
+                        )),
+                    const SizedBox(
+                      height: 45,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        ElevatedButton(
+                          onPressed: decrementPlayerNo,
+                          child: const Icon(Icons.arrow_back_sharp),
+                        ),
+                        const SizedBox(width: 40),
+                        Column(
+                          children: [
+                            Text(
+                              '$player_no',
+                              style: const TextStyle(
+                                  fontSize: 25, color: Colors.white),
+                            ),
+                            Text(
+                              (Players.players.isNotEmpty)
+                                  ? Players.players[player_no - 1].player_name
+                                  : 'Starting Now',
+                              style: TextStyle(fontSize: 35, color: darkYellow),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(width: 40),
+                        ElevatedButton(
+                          onPressed: incrementPlayerNo,
+                          child: const Icon(Icons.arrow_forward_sharp),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
-            ),
-            Expanded(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Column(
-                    children: [
-                      Text(
-                        'Base Price',
-                        style: TextStyle(fontSize: 35, color: Colors.green),
-                      ),
-                      Text(
-                        (Players.players != null && Players.players.isNotEmpty)
-                            ? '${Players.players[player_no - 1].basePrice.toString()} lac'
-                            : 'Starting Now',
-                        style: TextStyle(fontSize: 30),
-                      ),
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      Column(
-                        children: [
-                          ElevatedButton(
-                            onPressed: incrementCurrentBid,
-                            child: const Icon(Icons.add),
-                          ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          const Text(
-                            'Current Bid',
-                            style: TextStyle(fontSize: 35, color: Colors.green),
-                          ),
-                          Text(
-                            current_bid.toString(),
-                            style: TextStyle(fontSize: 30),
-                          ),
-                          const SizedBox(
-                            height: 10,
-                          ),
-                          ElevatedButton(
-                            onPressed: decrementCurrentBid,
-                            child: const Icon(Icons.remove),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ],
+              Expanded(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Column(
+                      children: [
+                        Text(
+                          'Base Price',
+                          style: TextStyle(fontSize: 35, color: darkYellow),
+                        ),
+                        Text(
+                          (Players.players.isNotEmpty)
+                              ? '${Players.players[player_no - 1].base_price.toString()} lac'
+                              : '400 lac',
+                          style: const TextStyle(
+                              fontSize: 30, color: Colors.white),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Column(
+                          children: [
+                            ElevatedButton(
+                              onPressed: incrementCurrentBid,
+                              child: const Icon(Icons.add),
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            Text(
+                              'Current Bid',
+                              style: TextStyle(fontSize: 35, color: darkYellow),
+                            ),
+                            Text(
+                              '${current_bid.toString()} lac',
+                              style: const TextStyle(
+                                  fontSize: 30, color: Colors.white),
+                            ),
+                            const SizedBox(
+                              height: 10,
+                            ),
+                            ElevatedButton(
+                              onPressed: decrementCurrentBid,
+                              child: const Icon(Icons.remove),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Column(
+                          children: [
+                            Text(
+                              'Rating',
+                              style: TextStyle(fontSize: 35, color: darkYellow),
+                            ),
+                            Text(
+                              (Players.players.isNotEmpty)
+                                  ? '${Players.players[player_no - 1].rating.toString()} pts'
+                                  : '97 pts',
+                              style: const TextStyle(
+                                  fontSize: 30, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Text(
+                              'Role',
+                              style: TextStyle(fontSize: 35, color: darkYellow),
+                            ),
+                            Text(
+                              (Players.players.isNotEmpty)
+                                  ? Players.players[player_no - 1].player_role
+                                      .toString()
+                                  : 'Wicketkeeper',
+                              style: const TextStyle(
+                                  fontSize: 30, color: Colors.white),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ));
   }
 }

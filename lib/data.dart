@@ -13,32 +13,29 @@ class Players {
 }
 
 class Player {
-  String name;
-  num number;
-  num battingIdx;
-  num bowlingIdx;
-  num fieldingIdx;
-  String imageAddress;
-  num basePrice;
+  String player_name;
+  num player_no;
+  num rating;
+  String path_of_image;
+  num base_price;
+  String player_role;
+
   Player({
-    required this.name,
-    required this.number,
-    required this.battingIdx,
-    required this.bowlingIdx,
-    required this.fieldingIdx,
-    required this.imageAddress,
-    required this.basePrice,
+    required this.player_name,
+    required this.player_no,
+    required this.rating,
+    required this.path_of_image,
+    required this.base_price,
+    required this.player_role,
   });
 
   factory Player.fromMap(Map<String, dynamic> map) {
     return Player(
-      name: map['cricket_player_name'],
-      number: map['player_number'],
-      battingIdx: map['batting_index'],
-      bowlingIdx: map['bowling_index'],
-      fieldingIdx: map['fielding_index'],
-      imageAddress: map['player_image_address'],
-      basePrice: map['base_price']
-    );
+        player_name: map['player_name'],
+        player_no: map['player_no'],
+        rating: map['rating'],
+        path_of_image: map['path_of_image'],
+        base_price: map['base_price'],
+        player_role: map['player_role']);
   }
 }

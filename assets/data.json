@@ -1,94 +1,1532 @@
 {
     "players": [
         {
-            "cricket_player_name": "Virat Kohli",
-            "base_price": 900,
-            "player_number": 1,
-            "batting_index": 9.8,
-            "bowling_index": 5.2,
-            "fielding_index": 8.5,
-            "player_image_address": "assets/1.jpeg"
+            "player_no": 1,
+            "player_name": "Jos Buttler",
+            "rating": 97,
+            "base_price": 400,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/1.jpg"
         },
         {
-            "cricket_player_name": "Kane Williamson",
-            "base_price": 800,
-            "player_number": 2,
-            "batting_index": 9.5,
-            "bowling_index": 6.0,
-            "fielding_index": 8.7,
-            "player_image_address": "assets/2.jpg"
+            "player_no": 2,
+            "player_name": "Suryakumar Yadav",
+            "rating": 94,
+            "base_price": 400,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/2.jpg"
         },
         {
-            "cricket_player_name": "Steve Smith",
-            "base_price": 500,
-            "player_number": 3,
-            "batting_index": 9.6,
-            "bowling_index": 4.5,
-            "fielding_index": 7.8,
-            "player_image_address": "assets/3.webp"
+            "player_no": 3,
+            "player_name": "Andre Russell",
+            "rating": 93,
+            "base_price": 400,
+            "player_role": "All-rounder",
+            "path_of_image": "assets/pics/3.jpg"
         },
         {
-            "cricket_player_name": "Joe Root",
-            "base_price": 700,
-            "player_number": 4,
-            "batting_index": 9.7,
-            "bowling_index": 5.5,
-            "fielding_index": 8.0,
-            "player_image_address": "assets/4.webp"
+            "player_no": 4,
+            "player_name": "Hardik Pandya",
+            "rating": 92,
+            "base_price": 400,
+            "player_role": "All-rounder",
+            "path_of_image": "assets/pics/4.jpg"
         },
         {
-            "cricket_player_name": "Rohit Sharma",
-            "base_price": 600,
-            "player_number": 5,
-            "batting_index": 9.9,
-            "bowling_index": 4.0,
-            "fielding_index": 8.2,
-            "player_image_address": "assets/4.webp"
-        },
-        {
-            "cricket_player_name": "David Warner",
-            "base_price": 300,
-            "player_number": 6,
-            "batting_index": 9.5,
-            "bowling_index": 6.5,
-            "fielding_index": 8.4,
-            "player_image_address": "assets/4.webp"
-        },
-        {
-            "cricket_player_name": "Babar Azam",
-            "base_price": 800,
-            "player_number": 7,
-            "batting_index": 9.8,
-            "bowling_index": 4.2,
-            "fielding_index": 8.1,
-            "player_image_address": "assets/4.webp"
-        },
-        {
-            "cricket_player_name": "Shakib Al Hasan",
-            "base_price": 600,
-            "player_number": 8,
-            "batting_index": 9.3,
-            "bowling_index": 8.0,
-            "fielding_index": 8.9,
-            "player_image_address": "assets/4.webp"
-        },
-        {
-            "cricket_player_name": "Ross Taylor",
-            "base_price": 100,
-            "player_number": 9,
-            "batting_index": 9.2,
-            "bowling_index": 2.5,
-            "fielding_index": 7.5,
-            "player_image_address": "assets/4.webp"
-        },
-        {
-            "cricket_player_name": "Kagiso Rabada",
+            "player_no": 5,
+            "player_name": "Yuzi Chahal",
+            "rating": 92,
             "base_price": 200,
-            "player_number": 10,
-            "batting_index": 7.0,
-            "bowling_index": 9.5,
-            "fielding_index": 8.8,
-            "player_image_address": "assets/4.webp"
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/5.jpg"
+        },
+        {
+            "player_no": 6,
+            "player_name": "Virat Kohli",
+            "rating": 92,
+            "base_price": 400,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/6.jpg"
+        },
+        {
+            "player_no": 7,
+            "player_name": "MS Dhoni",
+            "rating": 92,
+            "base_price": 400,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/7.jpg"
+        },
+        {
+            "player_no": 8,
+            "player_name": "Rohit Sharma",
+            "rating": 92,
+            "base_price": 400,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/8.jpg"
+        },
+        {
+            "player_no": 9,
+            "player_name": "KL Rahul",
+            "rating": 91,
+            "base_price": 400,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/9.jpg"
+        },
+        {
+            "player_no": 10,
+            "player_name": "David Miller",
+            "rating": 90,
+            "base_price": 400,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/10.jpg"
+        },
+        {
+            "player_no": 11,
+            "player_name": "W H DE SILVA",
+            "rating": 90,
+            "base_price": 200,
+            "player_role": "All-rounder",
+            "path_of_image": "assets/pics/11.jpg"
+        },
+        {
+            "player_no": 12,
+            "player_name": "Kagiso Rabada",
+            "rating": 89,
+            "base_price": 200,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/12.jpg"
+        },
+        {
+            "player_no": 13,
+            "player_name": "LS Livingstone",
+            "rating": 89,
+            "base_price": 200,
+            "player_role": "All-rounder",
+            "path_of_image": "assets/pics/13.jpg"
+        },
+        {
+            "player_no": 14,
+            "player_name": "Kuldeep Yadav",
+            "rating": 88,
+            "base_price": 200,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/14.jpg"
+        },
+        {
+            "player_no": 15,
+            "player_name": "M Prasidh Krishna",
+            "rating": 88,
+            "base_price": 200,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/15.png"
+        },
+        {
+            "player_no": 16,
+            "player_name": "Josh Hazlewood",
+            "rating": 88,
+            "base_price": 200,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/16.jpg"
+        },
+        {
+            "player_no": 17,
+            "player_name": "Umran Malik",
+            "rating": 88,
+            "base_price": 200,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/17.jpg"
+        },
+        {
+            "player_no": 18,
+            "player_name": "Mohammed Shami",
+            "rating": 88,
+            "base_price": 200,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/18.jpg"
+        },
+        {
+            "player_no": 19,
+            "player_name": "Jasprit Bumrah",
+            "rating": 88,
+            "base_price": 200,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/19.jpg"
+        },
+        {
+            "player_no": 20,
+            "player_name": "Avesh Khan",
+            "rating": 87,
+            "base_price": 200,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/20.jpg"
+        },
+        {
+            "player_no": 21,
+            "player_name": "Harshal Patel",
+            "rating": 87,
+            "base_price": 200,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/21.jpg"
+        },
+        {
+            "player_no": 22,
+            "player_name": "David Warner",
+            "rating": 87,
+            "base_price": 200,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/22.jpg"
+        },
+        {
+            "player_no": 23,
+            "player_name": "Shubman Gill",
+            "rating": 87,
+            "base_price": 200,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/23.jpg"
+        },
+        {
+            "player_no": 24,
+            "player_name": "R Ashwin",
+            "rating": 87,
+            "base_price": 200,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/24.png"
+        },
+        {
+            "player_no": 25,
+            "player_name": "Q de Kock",
+            "rating": 86,
+            "base_price": 200,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/25.jpg"
+        },
+        {
+            "player_no": 26,
+            "player_name": "Umesh Yadav",
+            "rating": 86,
+            "base_price": 200,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/26.jpg"
+        },
+        {
+            "player_no": 27,
+            "player_name": "Mohsin Khan",
+            "rating": 85,
+            "base_price": 150,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/27.jpg"
+        },
+        {
+            "player_no": 28,
+            "player_name": "Rashid Khan",
+            "rating": 85,
+            "base_price": 150,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/28.jpg"
+        },
+        {
+            "player_no": 29,
+            "player_name": "Shikhar Dhawan",
+            "rating": 85,
+            "base_price": 150,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/29.jpg"
+        },
+        {
+            "player_no": 30,
+            "player_name": "Deepak Hooda",
+            "rating": 85,
+            "base_price": 150,
+            "player_role": "All-rounder",
+            "path_of_image": "assets/pics/30.jpg"
+        },
+        {
+            "player_no": 31,
+            "player_name": "Shardul Thakur",
+            "rating": 85,
+            "base_price": 150,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/31.jpg"
+        },
+        {
+            "player_no": 32,
+            "player_name": "Bhuvenshwar Kumar",
+            "rating": 85,
+            "base_price": 150,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/32.jpg"
+        },
+        {
+            "player_no": 33,
+            "player_name": "F du Plessis",
+            "rating": 84,
+            "base_price": 150,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/33.jpg"
+        },
+        {
+            "player_no": 34,
+            "player_name": "NT Tilak Varma",
+            "rating": 84,
+            "base_price": 150,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/34.jpg"
+        },
+        {
+            "player_no": 35,
+            "player_name": "T Natarajan",
+            "rating": 84,
+            "base_price": 150,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/35.jpg"
+        },
+        {
+            "player_no": 36,
+            "player_name": "Devdutt Padikkal",
+            "rating": 84,
+            "base_price": 150,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/36.jpg"
+        },
+        {
+            "player_no": 37,
+            "player_name": "Ravindra Jadeja",
+            "rating": 84,
+            "base_price": 150,
+            "player_role": "All-rounder",
+            "path_of_image": "assets/pics/37.jpg"
+        },
+        {
+            "player_no": 38,
+            "player_name": "Moeen Ali",
+            "rating": 83,
+            "base_price": 150,
+            "player_role": "All-rounder",
+            "path_of_image": "assets/pics/38.jpg"
+        },
+        {
+            "player_no": 39,
+            "player_name": "Glen Maxwell",
+            "rating": 83,
+            "base_price": 150,
+            "player_role": "All-rounder",
+            "path_of_image": "assets/pics/39.jpg"
+        },
+        {
+            "player_no": 40,
+            "player_name": "Ishan Kishan",
+            "rating": 83,
+            "base_price": 150,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/40.jpg"
+        },
+        {
+            "player_no": 41,
+            "player_name": "Rishabh Pant",
+            "rating": 83,
+            "base_price": 150,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/41.jpg"
+        },
+        {
+            "player_no": 42,
+            "player_name": "Kieron Pollard",
+            "rating": 83,
+            "base_price": 150,
+            "player_role": "All-rounder",
+            "path_of_image": "assets/pics/42.jpg"
+        },
+        {
+            "player_no": 43,
+            "player_name": "Trent Boult",
+            "rating": 82,
+            "base_price": 150,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/43.jpg"
+        },
+        {
+            "player_no": 44,
+            "player_name": "Aiden Markram",
+            "rating": 82,
+            "base_price": 150,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/44.jpg"
+        },
+        {
+            "player_no": 45,
+            "player_name": "Dinesh Karthik",
+            "rating": 81,
+            "base_price": 150,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/45.jpg"
+        },
+        {
+            "player_no": 46,
+            "player_name": "Arshdeep Singh",
+            "rating": 81,
+            "base_price": 150,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/46.png"
+        },
+        {
+            "player_no": 47,
+            "player_name": "Mohammed Siraj",
+            "rating": 81,
+            "base_price": 150,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/47.jpg"
+        },
+        {
+            "player_no": 48,
+            "player_name": "Anrich Nortje",
+            "rating": 81,
+            "base_price": 150,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/48.jpg"
+        },
+        {
+            "player_no": 49,
+            "player_name": "Sanju Samson",
+            "rating": 80,
+            "base_price": 150,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/49.jpg"
+        },
+        {
+            "player_no": 50,
+            "player_name": "Rahul Chahar",
+            "rating": 80,
+            "base_price": 150,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/50.jpg"
+        },
+        {
+            "player_no": 51,
+            "player_name": "Rajat Patidar",
+            "rating": 80,
+            "base_price": 150,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/51.jpg"
+        },
+        {
+            "player_no": 52,
+            "player_name": "DJ Bravo",
+            "rating": 80,
+            "base_price": 150,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/52.jpg"
+        },
+        {
+            "player_no": 53,
+            "player_name": "Ruturaj Gaikwad",
+            "rating": 80,
+            "base_price": 150,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/53.jpg"
+        },
+        {
+            "player_no": 54,
+            "player_name": "Krunal Pandya",
+            "rating": 78,
+            "base_price": 100,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/54.jpg"
+        },
+        {
+            "player_no": 55,
+            "player_name": "Khaleel Ahmed",
+            "rating": 78,
+            "base_price": 100,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/55.jpg"
+        },
+        {
+            "player_no": 56,
+            "player_name": "Shreyas Iyer",
+            "rating": 78,
+            "base_price": 100,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/56.jpg"
+        },
+        {
+            "player_no": 57,
+            "player_name": "Dewald Brevis",
+            "rating": 78,
+            "base_price": 100,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/57.jpg"
+        },
+        {
+            "player_no": 58,
+            "player_name": "Abhishek Sharma",
+            "rating": 76,
+            "base_price": 100,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/58.png"
+        },
+        {
+            "player_no": 59,
+            "player_name": "Shimron Hetmyer",
+            "rating": 75,
+            "base_price": 100,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/59.jpg"
+        },
+        {
+            "player_no": 60,
+            "player_name": "Mitchell Marsh",
+            "rating": 75,
+            "base_price": 100,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/60.jpg"
+        },
+        {
+            "player_no": 61,
+            "player_name": "Mukesh Choudhary",
+            "rating": 75,
+            "base_price": 100,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/61.jpg"
+        },
+        {
+            "player_no": 62,
+            "player_name": "Rahul Tewatia",
+            "rating": 75,
+            "base_price": 100,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/62.jpg"
+        },
+        {
+            "player_no": 63,
+            "player_name": "Prithvi Shaw",
+            "rating": 75,
+            "base_price": 100,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/63.jpg"
+        },
+        {
+            "player_no": 64,
+            "player_name": "Kane Williamson",
+            "rating": 75,
+            "base_price": 100,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/64.jpg"
+        },
+        {
+            "player_no": 65,
+            "player_name": "Rahul Tripathi",
+            "rating": 74,
+            "base_price": 100,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/65.jpg"
+        },
+        {
+            "player_no": 66,
+            "player_name": "Daniel Sams",
+            "rating": 74,
+            "base_price": 100,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/66.jpg"
+        },
+        {
+            "player_no": 67,
+            "player_name": "Tim Southee",
+            "rating": 74,
+            "base_price": 100,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/67.jpg"
+        },
+        {
+            "player_no": 68,
+            "player_name": "Axar Patel",
+            "rating": 74,
+            "base_price": 100,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/68.jpg"
+        },
+        {
+            "player_no": 69,
+            "player_name": "Jonny Bairstow",
+            "rating": 74,
+            "base_price": 100,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/69.png"
+        },
+        {
+            "player_no": 70,
+            "player_name": "Bhanuka Rajapaksa",
+            "rating": 74,
+            "base_price": 100,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/70.png"
+        },
+        {
+            "player_no": 71,
+            "player_name": "Mayank Agarwal",
+            "rating": 74,
+            "base_price": 100,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/71.jpg"
+        },
+        {
+            "player_no": 72,
+            "player_name": "Mitchell Santner",
+            "rating": 74,
+            "base_price": 100,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/72.jpg"
+        },
+        {
+            "player_no": 73,
+            "player_name": "Jason Holder",
+            "rating": 73,
+            "base_price": 100,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/73.jpg"
+        },
+        {
+            "player_no": 74,
+            "player_name": "Shahbaz Ahmed",
+            "rating": 73,
+            "base_price": 100,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/74.jpg"
+        },
+        {
+            "player_no": 75,
+            "player_name": "Nicholas Pooran",
+            "rating": 73,
+            "base_price": 100,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/75.jpg"
+        },
+        {
+            "player_no": 76,
+            "player_name": "Wridhiman Saha",
+            "rating": 72,
+            "base_price": 100,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/76.jpg"
+        },
+        {
+            "player_no": 77,
+            "player_name": "Tim David",
+            "rating": 72,
+            "base_price": 100,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/77.jpg"
+        },
+        {
+            "player_no": 78,
+            "player_name": "Marcus Stoinis",
+            "rating": 71,
+            "base_price": 100,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/78.png"
+        },
+        {
+            "player_no": 79,
+            "player_name": "Ravi Bishnoi",
+            "rating": 70,
+            "base_price": 100,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/79.png"
+        },
+        {
+            "player_no": 80,
+            "player_name": "Mustafizur Rahman",
+            "rating": 70,
+            "base_price": 100,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/80.jpg"
+        },
+        {
+            "player_no": 81,
+            "player_name": "Alzarri Joseph",
+            "rating": 70,
+            "base_price": 100,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/81.jpg"
+        },
+        {
+            "player_no": 82,
+            "player_name": "Ajinkya Rahane",
+            "rating": 70,
+            "base_price": 100,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/82.jpg"
+        },
+        {
+            "player_no": 83,
+            "player_name": "Sandeep Sharma",
+            "rating": 70,
+            "base_price": 100,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/83.png"
+        },
+        {
+            "player_no": 84,
+            "player_name": "Devon Conway",
+            "rating": 69,
+            "base_price": 50,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/84.jpg"
+        },
+        {
+            "player_no": 85,
+            "player_name": "Obed McCoy",
+            "rating": 69,
+            "base_price": 50,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/85.jpg"
+        },
+        {
+            "player_no": 86,
+            "player_name": "Sunil Narine",
+            "rating": 69,
+            "base_price": 50,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/86.jpg"
+        },
+        {
+            "player_no": 87,
+            "player_name": "Jitesh Sharma",
+            "rating": 69,
+            "base_price": 50,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/87.png"
+        },
+        {
+            "player_no": 88,
+            "player_name": "Pat Cummins",
+            "rating": 69,
+            "base_price": 50,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/88.jpg"
+        },
+        {
+            "player_no": 89,
+            "player_name": "Aaron Finch",
+            "rating": 69,
+            "base_price": 50,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/89.jpg"
+        },
+        {
+            "player_no": 90,
+            "player_name": "Nitish Rana",
+            "rating": 68,
+            "base_price": 50,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/90.jpg"
+        },
+        {
+            "player_no": 91,
+            "player_name": "Lockie Ferguson",
+            "rating": 68,
+            "base_price": 50,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/91.jpg"
+        },
+        {
+            "player_no": 92,
+            "player_name": "Murugan Ashwin",
+            "rating": 68,
+            "base_price": 50,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/92.jpg"
+        },
+        {
+            "player_no": 93,
+            "player_name": "Venkatesh Iyer",
+            "rating": 68,
+            "base_price": 50,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/93.jpg"
+        },
+        {
+            "player_no": 94,
+            "player_name": "Manish Pandey",
+            "rating": 68,
+            "base_price": 50,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/94.jpg"
+        },
+        {
+            "player_no": 95,
+            "player_name": "Mahesh Theekshana",
+            "rating": 67,
+            "base_price": 50,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/95.jpg"
+        },
+        {
+            "player_no": 96,
+            "player_name": "Shivam Dube",
+            "rating": 67,
+            "base_price": 50,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/96.jpg"
+        },
+        {
+            "player_no": 97,
+            "player_name": "Lalit Yadav",
+            "rating": 67,
+            "base_price": 50,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/97.jpg"
+        },
+        {
+            "player_no": 98,
+            "player_name": "Shivam Mavi",
+            "rating": 67,
+            "base_price": 50,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/98.jpg"
+        },
+        {
+            "player_no": 99,
+            "player_name": "Nathan Coulter-Nile",
+            "rating": 67,
+            "base_price": 50,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/99.jpg"
+        },
+        {
+            "player_no": 100,
+            "player_name": "Yash Dayal",
+            "rating": 66,
+            "base_price": 50,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/100.jpg"
+        },
+        {
+            "player_no": 101,
+            "player_name": "Dushmantha Chameera",
+            "rating": 66,
+            "base_price": 50,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/101.png"
+        },
+        {
+            "player_no": 102,
+            "player_name": "Ambati Rayudu",
+            "rating": 66,
+            "base_price": 50,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/102.jpg"
+        },
+        {
+            "player_no": 103,
+            "player_name": "Yashasvi Jaiswal",
+            "rating": 66,
+            "base_price": 50,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/103.png"
+        },
+        {
+            "player_no": 104,
+            "player_name": "Jaydev Unadkat",
+            "rating": 66,
+            "base_price": 50,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/104.jpg"
+        },
+        {
+            "player_no": 105,
+            "player_name": "Rinku Singh",
+            "rating": 66,
+            "base_price": 50,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/105.jpg"
+        },
+        {
+            "player_no": 106,
+            "player_name": "Evin Lewis",
+            "rating": 66,
+            "base_price": 50,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/106.png"
+        },
+        {
+            "player_no": 107,
+            "player_name": "Ayush Badoni",
+            "rating": 65,
+            "base_price": 50,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/107.jpg"
+        },
+        {
+            "player_no": 108,
+            "player_name": "Washington Sundar",
+            "rating": 65,
+            "base_price": 50,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/108.png"
+        },
+        {
+            "player_no": 109,
+            "player_name": "Chetan Sakariya",
+            "rating": 65,
+            "base_price": 50,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/109.jpg"
+        },
+        {
+            "player_no": 110,
+            "player_name": "Srikar Bharat",
+            "rating": 65,
+            "base_price": 50,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/110.jpg"
+        },
+        {
+            "player_no": 111,
+            "player_name": "Ramandeep Singh",
+            "rating": 64,
+            "base_price": 50,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/111.jpg"
+        },
+        {
+            "player_no": 112,
+            "player_name": "Riley Meredith",
+            "rating": 64,
+            "base_price": 50,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/112.jpg"
+        },
+        {
+            "player_no": 113,
+            "player_name": "Sam Billings",
+            "rating": 64,
+            "base_price": 50,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/113.jpg"
+        },
+        {
+            "player_no": 114,
+            "player_name": "Narayan Jagadeesan",
+            "rating": 64,
+            "base_price": 50,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/114.jpg"
+        },
+        {
+            "player_no": 115,
+            "player_name": "Rovman Powell",
+            "rating": 63,
+            "base_price": 50,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/115.jpg"
+        },
+        {
+            "player_no": 116,
+            "player_name": "Marco Jansen",
+            "rating": 63,
+            "base_price": 50,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/116.png"
+        },
+        {
+            "player_no": 117,
+            "player_name": "Rishi Dhawan",
+            "rating": 63,
+            "base_price": 50,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/117.png"
+        },
+        {
+            "player_no": 118,
+            "player_name": "Varun Chakrvarthy",
+            "rating": 63,
+            "base_price": 50,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/118.jpg"
+        },
+        {
+            "player_no": 119,
+            "player_name": "Kuldeep Sen",
+            "rating": 62,
+            "base_price": 50,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/119.jpg"
+        },
+        {
+            "player_no": 120,
+            "player_name": "Dwaine Pretorius",
+            "rating": 62,
+            "base_price": 50,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/120.jpg"
+        },
+        {
+            "player_no": 121,
+            "player_name": "Harpreet Brar",
+            "rating": 62,
+            "base_price": 50,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/121.png"
+        },
+        {
+            "player_no": 122,
+            "player_name": "Sarfraz Khan",
+            "rating": 62,
+            "base_price": 50,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/122.jpg"
+        },
+        {
+            "player_no": 123,
+            "player_name": "Navdeep Saini",
+            "rating": 62,
+            "base_price": 50,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/123.png"
+        },
+        {
+            "player_no": 124,
+            "player_name": "Jagadeesha Suchith",
+            "rating": 61,
+            "base_price": 50,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/124.png"
+        },
+        {
+            "player_no": 125,
+            "player_name": "R Sai Kishore",
+            "rating": 61,
+            "base_price": 50,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/125.jpg"
+        },
+        {
+            "player_no": 126,
+            "player_name": "Odean Smith",
+            "rating": 61,
+            "base_price": 50,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/126.jpg"
+        },
+        {
+            "player_no": 127,
+            "player_name": "Robin Uthappa",
+            "rating": 61,
+            "base_price": 50,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/127.jpg"
+        },
+        {
+            "player_no": 128,
+            "player_name": "Riyan Parag",
+            "rating": 61,
+            "base_price": 50,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/128.png"
+        },
+        {
+            "player_no": 129,
+            "player_name": "Chris Jordan",
+            "rating": 60,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/129.jpg"
+        },
+        {
+            "player_no": 130,
+            "player_name": "Kartik Tyagi",
+            "rating": 60,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/130.png"
+        },
+        {
+            "player_no": 131,
+            "player_name": "Mandeep Singh",
+            "rating": 60,
+            "base_price": 25,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/131.jpg"
+        },
+        {
+            "player_no": 132,
+            "player_name": "Siddarth Kaul",
+            "rating": 60,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/132.jpg"
+        },
+        {
+            "player_no": 133,
+            "player_name": "Sai Sudharsan",
+            "rating": 59,
+            "base_price": 25,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/133.jpg"
+        },
+        {
+            "player_no": 134,
+            "player_name": "Matthew Wade",
+            "rating": 59,
+            "base_price": 25,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/134.jpg"
+        },
+        {
+            "player_no": 135,
+            "player_name": "Tymal Mills",
+            "rating": 58,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/135.jpg"
+        },
+        {
+            "player_no": 136,
+            "player_name": "Andrew Tye",
+            "rating": 58,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/136.jpg"
+        },
+        {
+            "player_no": 137,
+            "player_name": "Fabian Allen",
+            "rating": 58,
+            "base_price": 25,
+            "player_role": "All Rounder",
+            "path_of_image": "assets/pics/137.jpg"
+        },
+        {
+            "player_no": 138,
+            "player_name": "Adam Milne",
+            "rating": 58,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/138.jpg"
+        },
+        {
+            "player_no": 139,
+            "player_name": "Kamlesh Nagarkoti",
+            "rating": 58,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/139.jpg"
+        },
+        {
+            "player_no": 140,
+            "player_name": "Simarjeet Singh",
+            "rating": 57,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/140.jpg"
+        },
+        {
+            "player_no": 141,
+            "player_name": "Anuj Rawat",
+            "rating": 57,
+            "base_price": 25,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/141.jpg"
+        },
+        {
+            "player_no": 142,
+            "player_name": "Shahrukh Khan",
+            "rating": 57,
+            "base_price": 25,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/142.png"
+        },
+        {
+            "player_no": 143,
+            "player_name": "Krishnappa Gowtham",
+            "rating": 57,
+            "base_price": 25,
+            "player_role": "All-Rounder",
+            "path_of_image": "assets/pics/143.png"
+        },
+        {
+            "player_no": 144,
+            "player_name": "Romario Shepherd",
+            "rating": 57,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/144.jpg"
+        },
+        {
+            "player_no": 145,
+            "player_name": "Basil Thampi",
+            "rating": 56,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/145.jpg"
+        },
+        {
+            "player_no": 146,
+            "player_name": "Hrithik Shokeen",
+            "rating": 56,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/146.jpg"
+        },
+        {
+            "player_no": 147,
+            "player_name": "Akash Deep",
+            "rating": 56,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/147.jpg"
+        },
+        {
+            "player_no": 148,
+            "player_name": "Abdul Samad",
+            "rating": 56,
+            "base_price": 25,
+            "player_role": "All-Rounder",
+            "path_of_image": "assets/pics/148.png"
+        },
+        {
+            "player_no": 149,
+            "player_name": "Kumar Kartikeya",
+            "rating": 55,
+            "base_price": 25,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/149.jpg"
+        },
+        {
+            "player_no": 150,
+            "player_name": "Pradeep Sangwan",
+            "rating": 55,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/150.jpg"
+        },
+        {
+            "player_no": 151,
+            "player_name": "Matheesha Pathirana",
+            "rating": 55,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/151.jpg"
+        },
+        {
+            "player_no": 152,
+            "player_name": "Jimmy Neesham",
+            "rating": 55,
+            "base_price": 25,
+            "player_role": "All-Rounder",
+            "path_of_image": "assets/pics/152.jpg"
+        },
+        {
+            "player_no": 153,
+            "player_name": "Manan Vohra",
+            "rating": 55,
+            "base_price": 25,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/153.png"
+        },
+        {
+            "player_no": 154,
+            "player_name": "Vaibhav Arora",
+            "rating": 54,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/154.jpg"
+        },
+        {
+            "player_no": 155,
+            "player_name": "Prashant Solanki",
+            "rating": 54,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/155.jpg"
+        },
+        {
+            "player_no": 156,
+            "player_name": "Nathan Ellis",
+            "rating": 54,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/156.png"
+        },
+        {
+            "player_no": 157,
+            "player_name": "Abhinav Manohar",
+            "rating": 54,
+            "base_price": 25,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/157.jpg"
+        },
+        {
+            "player_no": 158,
+            "player_name": "Fazalhaq Farooqi",
+            "rating": 53,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/158.png"
+        },
+        {
+            "player_no": 159,
+            "player_name": "Mahipal Lomror",
+            "rating": 53,
+            "base_price": 25,
+            "player_role": "All-Rounder",
+            "path_of_image": "assets/pics/159.jpg"
+        },
+        {
+            "player_no": 160,
+            "player_name": "David Willey",
+            "rating": 53,
+            "base_price": 25,
+            "player_role": "All-Rounder",
+            "path_of_image": "assets/pics/160.jpg"
+        },
+        {
+            "player_no": 161,
+            "player_name": "Prerak Mankad",
+            "rating": 52,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/161.jpg"
+        },
+        {
+            "player_no": 162,
+            "player_name": "Varun Aaron",
+            "rating": 52,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/162.jpg"
+        },
+        {
+            "player_no": 163,
+            "player_name": "Darshan Nalkande",
+            "rating": 52,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/163.jpg"
+        },
+        {
+            "player_no": 164,
+            "player_name": "Suyash Prabhudessai",
+            "rating": 52,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/164.jpg"
+        },
+        {
+            "player_no": 165,
+            "player_name": "Shashank Singh",
+            "rating": 51,
+            "base_price": 25,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/165.png"
+        },
+        {
+            "player_no": 166,
+            "player_name": "Shreyas Gopal",
+            "rating": 51,
+            "base_price": 25,
+            "player_role": "All-Rounder",
+            "path_of_image": "assets/pics/166.png"
+        },
+        {
+            "player_no": 167,
+            "player_name": "Sherfane Rutherford",
+            "rating": 51,
+            "base_price": 25,
+            "player_role": "All-Rounder",
+            "path_of_image": "assets/pics/167.jpg"
+        },
+        {
+            "player_no": 168,
+            "player_name": "Daryl Mitchell",
+            "rating": 51,
+            "base_price": 25,
+            "player_role": "All-Rounder",
+            "path_of_image": "assets/pics/168.png"
+        },
+        {
+            "player_no": 169,
+            "player_name": "Priyam Garg",
+            "rating": 50,
+            "base_price": 25,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/169.png"
+        },
+        {
+            "player_no": 170,
+            "player_name": "Harshit Rana",
+            "rating": 50,
+            "base_price": 25,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/170.jpg"
+        },
+        {
+            "player_no": 171,
+            "player_name": "Sean Abbott",
+            "rating": 50,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/171.png"
+        },
+        {
+            "player_no": 172,
+            "player_name": "Mayank Markande",
+            "rating": 50,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/172.jpg"
+        },
+        {
+            "player_no": 173,
+            "player_name": "TIM Seifert",
+            "rating": 49,
+            "base_price": 25,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/173.jpg"
+        },
+        {
+            "player_no": 174,
+            "player_name": "Rassie van der Dussen",
+            "rating": 49,
+            "base_price": 25,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/174.png"
+        },
+        {
+            "player_no": 175,
+            "player_name": "TUSHAR Deshpande",
+            "rating": 49,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/175.jpg"
+        },
+        {
+            "player_no": 176,
+            "player_name": "Vijay Shankar",
+            "rating": 49,
+            "base_price": 25,
+            "player_role": "All-Rounder",
+            "path_of_image": "assets/pics/176.jpg"
+        },
+        {
+            "player_no": 177,
+            "player_name": "Ankul Roy",
+            "rating": 49,
+            "base_price": 25,
+            "player_role": "All-Rounder",
+            "path_of_image": "assets/pics/177.png"
+        },
+        {
+            "player_no": 178,
+            "player_name": "Tilak Varma",
+            "rating": 48,
+            "base_price": 25,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/178.jpg"
+        },
+        {
+            "player_no": 179,
+            "player_name": "Rasikh Salam",
+            "rating": 48,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/179.png"
+        },
+        {
+            "player_no": 180,
+            "player_name": "Baba Indrajith",
+            "rating": 48,
+            "base_price": 25,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/180.jpg"
+        },
+        {
+            "player_no": 181,
+            "player_name": "Sheldon Jackson",
+            "rating": 48,
+            "base_price": 25,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/181.jpg"
+        },
+        {
+            "player_no": 182,
+            "player_name": "Prabhsimran Singh",
+            "rating": 48,
+            "base_price": 25,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/182.png"
+        },
+        {
+            "player_no": 183,
+            "player_name": "Karun Nair",
+            "rating": 48,
+            "base_price": 25,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/183.png"
+        },
+        {
+            "player_no": 184,
+            "player_name": "RIPAL PATEL",
+            "rating": 47,
+            "base_price": 25,
+            "player_role": "All-Rounder",
+            "path_of_image": "assets/pics/184.jpg"
+        },
+        {
+            "player_no": 185,
+            "player_name": "Abhijeet Tomar",
+            "rating": 47,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/185.jpg"
+        },
+        {
+            "player_no": 186,
+            "player_name": "Aman Hakim Khan",
+            "rating": 47,
+            "base_price": 25,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/186.jpg"
+        },
+        {
+            "player_no": 187,
+            "player_name": "Anmolpreet Singh",
+            "rating": 47,
+            "base_price": 25,
+            "player_role": "Batsman",
+            "path_of_image": "assets/pics/187.jpg"
+        },
+        {
+            "player_no": 188,
+            "player_name": "RAJ Bawa",
+            "rating": 47,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/188.png"
+        },
+        {
+            "player_no": 189,
+            "player_name": "Sanjay Yadav",
+            "rating": 47,
+            "base_price": 25,
+            "player_role": "All-Rounder",
+            "path_of_image": "assets/pics/189.jpg"
+        },
+        {
+            "player_no": 190,
+            "player_name": "Karan Sharma",
+            "rating": 46,
+            "base_price": 25,
+            "player_role": "Wicketkeeper",
+            "path_of_image": "assets/pics/190.png"
+        },
+        {
+            "player_no": 191,
+            "player_name": "Tristan Stubbs",
+            "rating": 46,
+            "base_price": 25,
+            "player_role": "Bowler",
+            "path_of_image": "assets/pics/191.png"
         }
     ]
 }
