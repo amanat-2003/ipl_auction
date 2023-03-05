@@ -20,7 +20,7 @@ class Player {
   num base_price;
   String player_role;
 
-  Player({
+  Player({ 
     required this.player_name,
     required this.player_no,
     required this.rating,
