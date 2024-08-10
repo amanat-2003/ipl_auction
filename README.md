@@ -28,8 +28,8 @@ You can try out the app live [here](https://ipl-amanat.anamihub.com/).
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/ipl_auction_flutter_web_app.git
-   cd ipl_auction_flutter_web_app
+   git clone https://github.com/yourusername/ipl_auction.git
+   cd ipl_auction
    ```
 
 2. **Install Dependencies**
