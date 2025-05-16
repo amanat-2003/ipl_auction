@@ -4,7 +4,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:ipl_auction/data.dart';
+import 'package:ipl_auction/data.dart'; 
 import 'package:ipl_auction/widgets.dart';
 
 void main() {
@@ -39,13 +39,13 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   var player_no = 1;
   num current_bid = 400;
-  final darkYellow = Color.fromARGB(255, 228, 90, 4);
+  final darkYellow = const Color.fromARGB(255, 228, 90, 4);
   final controller = TextEditingController();
 
   setStartingBid() {
     setState(() {
       current_bid = (Players.players.isNotEmpty)
-          ? Players.players[player_no - 1].base_price
+          ? Players.players[player_no - 1].basePrice
           : 400;
     });
   }
@@ -119,9 +119,12 @@ class _MyHomePageState extends State<MyHomePage> {
           // elevation: 1,
         ),
         body: Container(
-          decoration: BoxDecoration(
-              image: DecorationImage(
-                  image: AssetImage('assets/pics/bg.png'), fit: BoxFit.cover)),
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/pics/bg.png'),
+              fit: BoxFit.cover,
+            ),
+          ),
           child: Row(
             // mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -147,13 +150,16 @@ class _MyHomePageState extends State<MyHomePage> {
                                   }
                                 });
                                 setStartingBid();
-                              } catch (e) {}
+                              } catch (e) {
+                                // ignore: avoid_print
+                                print(e);
+                              }
                             },
-                            style: TextStyle(color: Colors.white),
+                            style: const TextStyle(color: Colors.white),
                             cursorColor: Colors.white,
                             decoration: inpDecor.copyWith(
                               hintText: 'Player No.',
-                              hintStyle: TextStyle(
+                              hintStyle: const TextStyle(
                                 color: Colors.white,
                               ),
                             ),
@@ -161,14 +167,14 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ],
                     ),
-                    SizedBox(height: 30),
+                    const SizedBox(height: 30),
                     CircleAvatar(
                         radius: 205,
                         backgroundColor: Colors.deepOrange,
                         child: CircleAvatar(
                           backgroundImage: AssetImage(
                               (Players.players.isNotEmpty)
-                                  ? Players.players[player_no - 1].path_of_image
+                                  ? Players.players[player_no - 1].pathOfImage
                                   : 'assets/pics/1.jpg'),
                           // backgroundImage: AssetImage('assets/2.jpg'),
                           // backgroundImage: NetworkImage(
@@ -196,7 +202,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                             Text(
                               (Players.players.isNotEmpty)
-                                  ? Players.players[player_no - 1].player_name
+                                  ? Players.players[player_no - 1].playerName
                                   : 'Starting Now',
                               style: TextStyle(fontSize: 35, color: darkYellow),
                             ),
@@ -224,7 +230,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                         Text(
                           (Players.players.isNotEmpty)
-                              ? '${Players.players[player_no - 1].base_price.toString()} lac'
+                              ? '${Players.players[player_no - 1].basePrice.toString()} lac'
                               : '400 lac',
                           style: const TextStyle(
                               fontSize: 30, color: Colors.white),
@@ -289,7 +295,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                             Text(
                               (Players.players.isNotEmpty)
-                                  ? Players.players[player_no - 1].player_role
+                                  ? Players.players[player_no - 1].playerRole
                                       .toString()
                                   : 'Wicketkeeper',
                               style: const TextStyle(

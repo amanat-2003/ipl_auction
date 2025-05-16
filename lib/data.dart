@@ -13,29 +13,29 @@ class Players {
 }
 
 class Player {
-  String player_name;
-  num player_no;
+  String playerName;
+  num playerNo;
   num rating;
-  String path_of_image;
-  num base_price;
-  String player_role;
+  String pathOfImage;
+  num basePrice;
+  String playerRole;
 
   Player({ 
-    required this.player_name,
-    required this.player_no,
+    required this.playerName,
+    required this.playerNo,
     required this.rating,
-    required this.path_of_image,
-    required this.base_price,
-    required this.player_role,
+    required this.pathOfImage,
+    required this.basePrice,
+    required this.playerRole,
   });
 
   factory Player.fromMap(Map<String, dynamic> map) {
     return Player(
-        player_name: map['player_name'],
-        player_no: map['player_no'],
+        playerName: map['player_name'],
+        playerNo: map['player_no'],
         rating: map['rating'],
-        path_of_image: map['path_of_image'],
-        base_price: map['base_price'],
-        player_role: map['player_role']);
+        pathOfImage: map['path_of_image'],
+        basePrice: map['base_price'],
+        playerRole: map['player_role']);
   }
 }
